@@ -95,7 +95,7 @@ footer {
   margin-left: auto;
 }
 .top-card {
-  width: 70%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
   margin-top: -12em;
@@ -220,6 +220,9 @@ header {
   .text-footer {
     margin-right: 0px;
     margin-left: 0px;
+  }
+  .top-card {
+    width: 90%;
   }
 }
 
