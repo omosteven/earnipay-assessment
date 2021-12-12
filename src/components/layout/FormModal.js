@@ -1,6 +1,6 @@
 import Modal from "react-modal";
 import { useForm } from "react-hook-form";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { authHandler } from "../../redux/actions/auth";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -15,7 +15,6 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
     background: "white",
     border: "none",
-    display:'none',
     boxShadow: "19px 19px 34px #afafaf, -19px -19px 34px #ffffff",
   },
 };
@@ -47,7 +46,7 @@ const FormModal = ({ handleClose, open }) => {
         pauseOnHover
         zIndex={10000000000000000000000}
       />
-<div style={{display:'none'}}>
+
       <Modal
         isOpen={open}
         // onAfterOpen={afterOpenModal}
@@ -105,7 +104,6 @@ const FormModal = ({ handleClose, open }) => {
           </div>
         </div>
       </Modal>
-      </div>
     </>
   );
 };
